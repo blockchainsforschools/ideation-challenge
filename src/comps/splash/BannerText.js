@@ -1,45 +1,52 @@
-import React from "react";
-import useInnerWidth from "../../utils/useInnerWidth";
-import { Button } from "@rmwc/button";
-import "@rmwc/button/styles";
-import { createUseStyles } from "react-jss";
-import useInnerHeight from "../../utils/useInnerHeight";
+import React from 'react';
+import { Button } from '@rmwc/button';
+import '@rmwc/button/styles';
+import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
 	TextContainer: {
-		width: ({ desktop }) => (desktop ? "500px" : `calc(100% - 2rem)`),
-		maxWidth: "100%",
-		top: ({ desktop }) => (desktop ? "25vh" : "unset"),
-		bottom: ({ desktop }) => (desktop ? "unset" : "10vh"),
-		position: "absolute",
-		left: ({ desktop }) => (desktop ? "10vw" : 0),
+		width: '500px',
+		maxWidth: '100%',
+		top: '25vh',
+		position: 'absolute',
+		left: '10vw',
 		backgroundColor: `rgba(255, 255, 255, 0.35)`,
-		padding: "1rem"
+		padding: '1rem'
 	},
 	EventName: {
-		fontSize: "3rem",
-		color: "#4cbb85",
-		textAlign: ({ desktop }) => (desktop ? "left" : "center")
+		fontSize: '3rem',
+		color: '#4cbb85',
+		textAlign: 'left'
 	},
 	EventDescription: {
-		color: "grey",
-		marginBottom: "2rem",
-		textAlign: ({ desktop }) => (desktop ? "left" : "center")
+		color: 'grey',
+		marginBottom: '2rem',
+		textAlign: 'left'
 	},
 	ApplyButton: {
-		textAlign: ({ desktop }) => (desktop ? "left" : "center")
+		textAlign: 'left'
+	},
+	'@media (max-width: 720px)': {
+		TextContainer: {
+			width: `calc(100% - 2rem)`,
+			top: 'unset',
+			bottom: '10vh',
+			left: 0
+		},
+		ApplyButton: {
+			textAlign: 'center'
+		},
+		EventDescription: {
+			textAlign: 'center'
+		},
+		EventName: {
+			textAlign: 'center'
+		}
 	}
 });
 
 const BannerText = () => {
-	const innerWidth = useInnerWidth();
-	const innerHeight = useInnerHeight();
-
-	const classes = useStyles({
-		desktop: innerWidth > 720,
-		innerWidth,
-		innerHeight
-	});
+	const classes = useStyles();
 
 	return (
 		<div className={classes.TextContainer}>

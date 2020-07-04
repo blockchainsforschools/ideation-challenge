@@ -1,10 +1,7 @@
-import React from "react";
-import useInnerWidth from "../../utils/useInnerWidth";
+import React from 'react';
 
 const Globe = () => {
 	const ref = React.createRef();
-	const innerWidth = useInnerWidth();
-	const isDesktop = innerWidth > 720;
 
 	React.useEffect(() => {
 		if (ref.current) {
@@ -16,13 +13,13 @@ const Globe = () => {
 				minWidth: 100.0,
 				scale: 1.0,
 				scaleMobile: 1.0,
-				color: "#4cbb85",
-				color2: "#f67c99",
+				color: '#4cbb85',
+				color2: '#f67c99',
 				backgroundColor: 0xffffff,
-				size: isDesktop ? 0.8 : 0.6
+				size: window.innerWidth > 720 ? 0.8 : 0.6
 			});
 		}
-	}, [ref, isDesktop]);
+	}, [ref]);
 
 	return (
 		<div
@@ -30,7 +27,7 @@ const Globe = () => {
 			style={{
 				top: 0,
 				left: 0,
-				height: "90vh",
+				height: '90vh',
 				zIndex: -1,
 				opacity: 0.7
 			}}
