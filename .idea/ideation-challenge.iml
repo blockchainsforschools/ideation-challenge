@@ -5,6 +5,10 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="vanta.halo" level="application" />
+    <orderEntry type="library" name="three.js" level="application" />
+    <orderEntry type="library" name="vanta.net" level="application" />
+    <orderEntry type="library" name="vanta.globe" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_FOLDERS">
