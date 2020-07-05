@@ -7,7 +7,7 @@ const useStyles = createUseStyles({
 	TopBar: {
 		width: `100%`,
 		height: '64px',
-		background: `rgba(255, 255, 255, 0.5)`,
+		background: `rgba(255, 255, 255, 0.6)`,
 		position: 'fixed',
 		zIndex: 99,
 		top: 0
