@@ -10,8 +10,12 @@ const useStyles = createUseStyles({
 		background: `rgba(255, 255, 255, 0.5)`,
 		position: 'fixed',
 		zIndex: 99,
-		padding: '0 9vw',
 		top: 0
+	},
+	InnerBar: {
+		position: 'relative',
+		width: 'calc(100% - 20vw)',
+		marginLeft: '10vw'
 	},
 	LogoText: {
 		color: '#4cbb85',
@@ -23,8 +27,18 @@ const useStyles = createUseStyles({
 		verticalAlign: 'middle'
 	},
 	'@media (max-width: 720px)': {
-		TopBar: {
-			padding: '0 2vw'
+		InnerBar: {
+			width: 'calc(100% - 4vw)',
+			marginLeft: '2vw'
+		}
+	},
+	'@media (max-width: 500px)': {
+		LogoIcon: {
+			height: '40px'
+		},
+		LogoText: {
+			fontSize: '1rem',
+			lineHeight: '64px'
 		}
 	}
 });
@@ -34,12 +48,18 @@ const AppBar = () => {
 
 	return (
 		<div className={classes.TopBar}>
-			<span className={classes.LogoText}>
-				<img src={BFSIcon} alt={'Logo'} className={classes.LogoIcon} />
-				Blockchains for Schools
-			</span>
+			<div className={classes.InnerBar}>
+				<span className={classes.LogoText}>
+					<img
+						src={BFSIcon}
+						alt={'Logo'}
+						className={classes.LogoIcon}
+					/>
+					Blockchains for Schools
+				</span>
 
-			<NavMenu />
+				<NavMenu />
+			</div>
 		</div>
 	);
 };
