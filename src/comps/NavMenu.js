@@ -1,6 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { IconButton } from '@rmwc/icon-button';
+import { Link } from 'react-scroll';
 import '@rmwc/icon-button/styles';
 
 const desktopMin = 720;
@@ -42,10 +43,60 @@ const NavMenu = () => {
 	return (
 		<span className={classes.NavContainer}>
 			<span className={classes.TabbedMenu}>
-				<span className={classes.Tab}>Overview</span>
-				<span className={classes.Tab}>About</span>
-				<span className={classes.Tab}>FAQ</span>
-				<span className={classes.Tab}>Apply</span>
+				<Link
+					className={classes.Tab}
+					to="Overview"
+					spy={true}
+					offset={-70}
+					duration={500}
+				>
+					Overview
+				</Link>
+				<Link
+					className={classes.Tab}
+					to="ChallengeSponsors"
+					spy={true}
+					offset={-70}
+					duration={500}
+				>
+					Challenge Sponsors
+				</Link>
+				<Link
+					className={classes.Tab}
+					to="ProjectSupport"
+					spy={true}
+					offset={-70}
+					duration={500}
+				>
+					Project Support
+				</Link>
+				<Link
+					className={classes.Tab}
+					to="About"
+					spy={true}
+					offset={-70}
+					duration={500}
+				>
+					About
+				</Link>
+				<Link
+					className={classes.Tab}
+					to="FAQ"
+					spy={true}
+					offset={-70}
+					duration={500}
+				>
+					FAQ
+				</Link>
+				<Link
+					className={classes.Tab}
+					to="Apply"
+					spy={true}
+					offset={-70}
+					duration={500}
+				>
+					Apply
+				</Link>
 			</span>
 
 			<span className={classes.BurgerMenu}>
