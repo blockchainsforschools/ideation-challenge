@@ -18,10 +18,10 @@ const useStyles = createUseStyles({
 	}
 });
 
-const Overview = () => {
+const Overview = ({ id }) => {
 	const classes = useStyles();
 	return (
-		<div className={classes.CenterContainer}>
+		<div className={classes.CenterContainer} id={id}>
 			<div className={classes.ContentContainer}>
 				<h1 className={classes.Heading}>Overview</h1>
 
@@ -36,6 +36,12 @@ const Overview = () => {
 					students throughout the Challenge and judge the final
 					submissions. We have over $10,000 in prizes, including
 					Microsoft Surface Pros, Airpods, and other cool hardware!
+				</p>
+
+				<p className={classes.Paragraph}>
+					Participants at the end of the challenge will be able to
+					access thousands of dollars of premium content from our
+					sponsors, including Microsoft, Amazon, and Consensys!
 				</p>
 			</div>
 		</div>
