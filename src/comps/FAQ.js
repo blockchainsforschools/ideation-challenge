@@ -19,10 +19,10 @@ const useStyles = createUseStyles({
 	}
 });
 
-const FAQ = () => {
+const FAQ = ({ id }) => {
 	const classes = useStyles();
 	return (
-		<div className={classes.CenterContainer}>
+		<div className={classes.CenterContainer} id={id}>
 			<div className={classes.ContentContainer}>
 				<h1 className={classes.Heading}>FAQ</h1>
 				<p className={classes.Paragraph}>Some content here</p>

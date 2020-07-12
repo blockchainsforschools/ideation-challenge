@@ -8,7 +8,7 @@ import Overview from './comps/Overview';
 import ChallengeSponsors from './comps/ChallengeSponsors';
 import ProjectSupport from './comps/ProjectSupport';
 
-import FAQ from './FAQ';
+import FAQ from './comps/FAQ';
 
 function App() {
 	return (
