@@ -27,15 +27,13 @@ const About = () => {
 
 				<h2>What is it?</h2>
 				<p className={classes.Paragraph}>
-					A competition in which students will work in groups of 1 to
-					4 to ideate a project or business utilizing blockchain
-					technology and create a short slide deck for submission
-					(example if we want to be more business focused). Students
-					may submit anytime during the submission period (all of
-					July). Submissions will be reviewed by our team and the top
-					thirty teams will have the opportunity to present their
-					project within four minutes to a panel of judges during our
-					pitch competition.
+					All teams will be submitting a two page business plan and
+					one minute elevator pitch video (in the form of a YouTube
+					link). Blockchain does not have to be the central component
+					of the project, but it should be used in a unique and
+					innovative way. Note this is an ideation challenge, not a
+					hackathon, so no code should be submitted.{' '}
+					<b>Submissions must be submitted by August 21 11:59 EDT.</b>
 				</p>
 
 				<h2>Why?</h2>

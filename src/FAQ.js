@@ -24,7 +24,7 @@ const FAQ = () => {
 	return (
 		<div className={classes.CenterContainer}>
 			<div className={classes.ContentContainer}>
-				<h1 className={classes.Heading}>FAQs</h1>
+				<h1 className={classes.Heading}>FAQ</h1>
 				<p className={classes.Paragraph}>Some content here</p>
 			</div>
 		</div>
