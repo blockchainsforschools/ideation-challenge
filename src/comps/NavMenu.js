@@ -42,6 +42,7 @@ const NavMenu = () => {
 	return (
 		<span className={classes.NavContainer}>
 			<span className={classes.TabbedMenu}>
+				<span className={classes.Tab}>Overview</span>
 				<span className={classes.Tab}>About</span>
 				<span className={classes.Tab}>FAQ</span>
 				<span className={classes.Tab}>Apply</span>

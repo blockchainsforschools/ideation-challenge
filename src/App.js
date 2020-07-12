@@ -4,6 +4,8 @@ import AppBar from './comps/AppBar';
 import SplashBanner from './comps/SplashBanner';
 import ThemeProvider from './comps/ThemeProvider';
 import About from './comps/About';
+import Overview from './comps/Overview';
+
 import FAQ from './FAQ';
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
 		<ThemeProvider>
 			<AppBar />
 			<SplashBanner />
+			<Overview />
 			<About />
 			<FAQ />
 		</ThemeProvider>
