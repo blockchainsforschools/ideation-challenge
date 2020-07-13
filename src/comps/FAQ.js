@@ -25,7 +25,27 @@ const FAQ = ({ id }) => {
 		<div className={classes.CenterContainer} id={id}>
 			<div className={classes.ContentContainer}>
 				<h1 className={classes.Heading}>FAQ</h1>
-				<p className={classes.Paragraph}>Some content here</p>
+
+				<h2>Who can compete?</h2>
+				<p className={classes.Paragraph}>
+					Any and all high school and college students can participate
+					in the Challenge. You don’t have to be familiar with
+					blockchain technology prior to the competition, but must be
+					willing to learn!
+				</p>
+
+				<h2>What are the prizes?</h2>
+				<p className={classes.Paragraph}>
+					All participants will receive priority consideration for our
+					in-person hackathon in 2021, receive XXX, and XXX. Team
+					prizes can be found here.
+				</p>
+
+				<h2>Who are the judges?</h2>
+				<p className={classes.Paragraph}>
+					The judges are a mix of software engineers, professors,
+					XXXXXX.
+				</p>
 			</div>
 		</div>
 	);
