@@ -13,20 +13,45 @@ import RecommendedTimeline from './comps/RecommendedTimeline';
 import MinRequirementsTimeline from './comps/MinRequirementsTimeline';
 
 import FAQ from './comps/FAQ';
+import Rules from './comps/Rules';
+import Deadlines from './comps/Deadlines';
 
 function App() {
 	return (
 		<ThemeProvider>
 			<AppBar />
 			<SplashBanner />
+			<br />
+			<br />
+
 			<Overview id="Overview" />
-			<ChallengeSponsors id="ChallengeSponsors" />
-			<ProjectSupport id="ProjectSupport" />
+			<br />
+			<br />
+
 			<About id="About" />
+			<br />
+			<br />
+
+			<ProjectSupport id="ProjectSupport" />
+			<br />
+			<br />
+
+			<Deadlines />
+			<br />
+			<br />
+
+			<ChallengeSponsors id="ChallengeSponsors" />
+			<br />
+			<br />
+
+			<Rules id={'Rules'} />
+			<br />
+			<br />
+
 			<ReadyToJoin id="ReadyToJoin" />
-			<ImportantDeadlines id="ImportantDeadlines" />
-			<RecommendedTimeline id="RecommendedTimeline" />
-			<MinRequirementsTimeline id="MinRequirementsTimeline" />
+			<br />
+			<br />
+
 			<FAQ id="FAQ" />
 		</ThemeProvider>
 	);

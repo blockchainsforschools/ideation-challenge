@@ -16,7 +16,8 @@ const useStyles = createUseStyles({
 		textAlign: 'center'
 	},
 	Paragraph: {
-		fontWeight: 300
+		fontWeight: 300,
+		textAlign: 'center'
 	},
 	RegisterButton: {
 		textAlign: 'center'
@@ -36,7 +37,16 @@ const ReadyToJoin = ({ id }) => {
 				</p>
 
 				<div className={classes.RegisterButton}>
-					<Button unelevated>Register Here!</Button>
+					<Button
+						unelevated
+						onClick={() =>
+							window.open(
+								'https://hackathonbfs.typeform.com/to/i0zS8OsY'
+							)
+						}
+					>
+						Register Here!
+					</Button>
 				</div>
 			</div>
 		</div>

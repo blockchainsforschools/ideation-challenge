@@ -1,6 +1,9 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 
+import { Grid, GridCell } from '@rmwc/grid';
+import '@rmwc/grid/styles';
+
 import consensysLogo from '../img/ConsenSys-logo.png';
 import gitcoinLogo from '../img/Gitcoin-logo.png';
 
@@ -22,13 +25,14 @@ const useStyles = createUseStyles({
 		fontWeight: 300
 	},
 	ConsenSysLogo: {
-		height: '65%',
-		width: '30%'
+		height: '100px'
 	},
 	GitcoinLogo: {
-		height: '35%',
-		width: '25%',
-		padding: '4% 0px'
+		height: '100px'
+	},
+	FlexCenter: {
+		display: 'flex',
+		justifyContent: 'center'
 	}
 });
 
@@ -38,16 +42,24 @@ const ChallengeSponsors = ({ id }) => {
 		<div className={classes.CenterContainer} id={id}>
 			<div className={classes.ContentContainer}>
 				<h1 className={classes.Heading}>Challenge Sponsors</h1>
-				<img
-					className={classes.ConsenSysLogo}
-					src={consensysLogo}
-					alt="ConsenSys Logo"
-				/>
-				<img
-					className={classes.GitcoinLogo}
-					src={gitcoinLogo}
-					alt="Gitcoin Logo"
-				/>
+				{/*<div className={classes.FlexCenter}>*/}
+				<Grid>
+					<GridCell span={6}>
+						<img
+							className={classes.ConsenSysLogo}
+							src={consensysLogo}
+							alt="ConsenSys Logo"
+						/>
+					</GridCell>
+					<GridCell span={6}>
+						<img
+							className={classes.GitcoinLogo}
+							src={gitcoinLogo}
+							alt="Gitcoin Logo"
+						/>
+					</GridCell>
+				</Grid>
+				{/*</div>*/}
 			</div>
 		</div>
 	);

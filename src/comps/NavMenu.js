@@ -4,7 +4,7 @@ import { IconButton } from '@rmwc/icon-button';
 import { Link } from 'react-scroll';
 import '@rmwc/icon-button/styles';
 
-const desktopMin = 720;
+const desktopMin = 1180;
 
 const useStyles = createUseStyles({
 	TabbedMenu: {
@@ -100,7 +100,7 @@ const NavMenu = () => {
 			</span>
 
 			<span className={classes.BurgerMenu}>
-				<IconButton className={classes.BurgerIcon} icon="menu" />
+				{/*<IconButton className={classes.BurgerIcon} icon="menu" />*/}
 			</span>
 		</span>
 	);

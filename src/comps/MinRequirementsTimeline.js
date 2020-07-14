@@ -1,5 +1,6 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
+import { Grid, GridCell } from '@rmwc/grid';
 
 const useStyles = createUseStyles({
 	CenterContainer: {
@@ -20,10 +21,6 @@ const useStyles = createUseStyles({
 	Dates: {
 		fontWeight: 400,
 		listStyle: 'none'
-	},
-	Deadlines: {
-		display: 'grid',
-		gridTemplateColumns: '2fr 1fr'
 	}
 });
 
@@ -35,19 +32,28 @@ const MinRequirementsTimeline = ({ id }) => {
 				<h1 className={classes.Heading}>
 					Minimum Requirements Timeline
 				</h1>
+				<Grid className={classes.Descriptions}>
+					<GridCell span={7} tablet={5}>
+						Register by
+					</GridCell>
+					<GridCell span={5} tablet={3}>
+						August 9th
+					</GridCell>
 
-				<div class={classes.Deadlines}>
-					<ul className={classes.Descriptions}>
-						<li>Register by</li>
-						<li>Submit BMC by</li>
-						<li>Submit Final by </li>
-					</ul>
-					<ul className={classes.Dates}>
-						<li>August 9th</li>
-						<li>August 16th</li>
-						<li>August 21st</li>
-					</ul>
-				</div>
+					<GridCell span={7} tablet={5}>
+						Submit BMC by
+					</GridCell>
+					<GridCell span={5} tablet={3}>
+						August 16th
+					</GridCell>
+
+					<GridCell span={7} tablet={5}>
+						Submit Final by
+					</GridCell>
+					<GridCell span={5} tablet={3}>
+						August 21st
+					</GridCell>
+				</Grid>
 			</div>
 		</div>
 	);

@@ -7,7 +7,7 @@ const useStyles = createUseStyles({
 	TopBar: {
 		width: `100%`,
 		height: '64px',
-		background: `rgba(255, 255, 255, 0.6)`,
+		background: ({ fill }) => `rgba(255, 255, 255, ${fill ? 1 : 0.6})`,
 		position: 'fixed',
 		zIndex: 99,
 		top: 0
@@ -44,7 +44,17 @@ const useStyles = createUseStyles({
 });
 
 const AppBar = () => {
-	const classes = useStyles();
+	const [fill, setFill] = React.useState(window.scrollY > 0);
+	const classes = useStyles({ fill });
+
+	React.useEffect(() => {
+		window.onscroll = () => {
+			const shouldFill = window.scrollY > 0;
+			if (fill !== shouldFill) {
+				setFill(shouldFill);
+			}
+		};
+	}, [fill]);
 
 	return (
 		<div className={classes.TopBar}>
@@ -55,7 +65,7 @@ const AppBar = () => {
 						alt={'Logo'}
 						className={classes.LogoIcon}
 					/>
-					Blockchains for Schools
+					HackBFS
 				</span>
 
 				<NavMenu />

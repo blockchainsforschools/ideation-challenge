@@ -1,6 +1,23 @@
 import React from 'react';
+import {createUseStyles} from "react-jss";
+
+const useStyles = createUseStyles({
+	globe: {
+		top: 0,
+		left: 0,
+		height: '70vh',
+		zIndex: -1,
+		opacity: 0.7
+	},
+	"@media (max-height: 700px)": {
+		globe: {
+			height: "92vh"
+		}
+	}
+});
 
 const Globe = () => {
+	const classes = useStyles();
 	const ref = React.createRef();
 
 	React.useEffect(() => {
@@ -24,13 +41,7 @@ const Globe = () => {
 	return (
 		<div
 			ref={ref}
-			style={{
-				top: 0,
-				left: 0,
-				height: '90vh',
-				zIndex: -1,
-				opacity: 0.7
-			}}
+			className={classes.globe}
 		/>
 	);
 };
