@@ -3,13 +3,6 @@ import { createUseStyles } from 'react-jss';
 import { Grid, GridCell } from '@rmwc/grid';
 
 const useStyles = createUseStyles({
-	CenterContainer: {
-		display: 'flex',
-		justifyContent: 'center'
-	},
-	ContentContainer: {
-		width: '80vw'
-	},
 	Heading: {
 		color: '#4cbb85',
 		textAlign: 'center'

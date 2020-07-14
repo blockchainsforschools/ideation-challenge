@@ -10,10 +10,10 @@ const Deadlines = () => {
 			<GridCell span={4} tablet={8}>
 				<ImportantDeadlines />
 			</GridCell>
-			<GridCell span={5} tablet={8}>
+			<GridCell span={5} tablet={8} phone={4}>
 				<RecommendedTimeline />
 			</GridCell>
-			<GridCell span={3} tablet={8}>
+			<GridCell span={3} tablet={8} phone={4}>
 				<MinRequirementsTimeline />
 			</GridCell>
 		</Grid>
