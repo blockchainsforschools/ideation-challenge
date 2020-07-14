@@ -37,14 +37,15 @@ const FAQ = ({ id }) => {
 				<h2>What are the prizes?</h2>
 				<p className={classes.Paragraph}>
 					All participants will receive priority consideration for our
-					in-person hackathon in 2021, receive XXX, and XXX. Team
-					prizes can be found here.
+					in-person hackathon in 2021. Prizes also include Airpods,
+					laptops, and other hardware. The full list will be announced
+					later.
 				</p>
 
 				<h2>Who are the judges?</h2>
 				<p className={classes.Paragraph}>
-					The judges are a mix of software engineers, professors,
-					XXXXXX.
+					The judges are a mix of software engineers, professors. More
+					info to come later.
 				</p>
 			</div>
 		</div>

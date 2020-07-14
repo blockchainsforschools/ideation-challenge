@@ -12,7 +12,7 @@ import ReadyToJoin from './comps/ReadyToJoin';
 import FAQ from './comps/FAQ';
 import Rules from './comps/Rules';
 import Deadlines from './comps/Deadlines';
-import Prizes from './comps/Prizes';
+// import Prizes from './comps/Prizes';
 
 function App() {
 	return (
@@ -31,10 +31,6 @@ function App() {
 			<br />
 
 			<ProjectSupport id="ProjectSupport" />
-			<br />
-			<br />
-
-			<Prizes />
 			<br />
 			<br />
 
