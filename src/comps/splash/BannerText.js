@@ -81,7 +81,7 @@ const BannerText = () => {
 						)
 					}
 				>
-					Register aNow
+					Register Now
 				</Button>
 			</div>
 		</div>
