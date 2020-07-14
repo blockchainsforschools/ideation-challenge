@@ -1,6 +1,6 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import { Grid, GridCell } from '@rmwc/grid';
+import { GridRow, GridCell } from '@rmwc/grid';
 
 const useStyles = createUseStyles({
 	CenterContainer: {
@@ -32,7 +32,7 @@ const ImportantDeadlines = ({ id }) => {
 				<h1 className={classes.Heading}>Important Deadlines</h1>
 
 				<div className={classes.Descriptions}>
-					<Grid>
+					<GridRow>
 						<GridCell span={9} tablet={6}>
 							Registration deadline (to get swag pack):
 						</GridCell>
@@ -60,7 +60,7 @@ const ImportantDeadlines = ({ id }) => {
 						<GridCell span={3} tablet={2}>
 							August 21, 11:59pm EDT
 						</GridCell>
-					</Grid>
+					</GridRow>
 				</div>
 			</div>
 		</div>

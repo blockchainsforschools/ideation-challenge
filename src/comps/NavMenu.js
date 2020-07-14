@@ -88,15 +88,6 @@ const NavMenu = () => {
 				>
 					FAQ
 				</Link>
-				<Link
-					className={classes.Tab}
-					to="Apply"
-					spy={true}
-					offset={-70}
-					duration={500}
-				>
-					Apply
-				</Link>
 			</span>
 
 			<span className={classes.BurgerMenu}>

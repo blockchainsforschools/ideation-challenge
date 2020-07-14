@@ -65,7 +65,7 @@ const BannerText = () => {
 		<div className={classes.TextContainer}>
 			<h1 className={classes.EventName}>Blockchain Ideation Challenge</h1>
 			<p className={classes.EventDescription}>
-				A 4-week ideation pitch competition for high school and college
+				A summer ideation pitch competition for high school and college
 				students to create innovative projects using blockchain
 				technology. Sign up to learn about blockchain, the design
 				process, how to create a business model canvas, and compete to
@@ -81,7 +81,7 @@ const BannerText = () => {
 						)
 					}
 				>
-					Apply Now
+					Register aNow
 				</Button>
 			</div>
 		</div>
