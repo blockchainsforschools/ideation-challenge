@@ -33,60 +33,46 @@ const RecommendedTimeline = ({ id }) => {
 
 				<div className={classes.Descriptions}>
 					<Grid>
-						<GridCell span={7} tablet={5}>
-							Register (required)
-						</GridCell>
-						<GridCell span={5} tablet={3}>
-							July 20 (latest by 8/10)
-						</GridCell>
-
-						<GridCell span={7} tablet={5}>
-							Step 1: Learn About Blockchain
-						</GridCell>
-						<GridCell span={5} tablet={3}>
-							July 20 - July 26
+						<GridCell span={12}>
+							<span>Register (required):</span> &nbsp;&nbsp;{' '}
+							<span style={{ textAlign: 'right' }}>
+								July 20 (latest by 8/10)
+							</span>
 						</GridCell>
 
-						<GridCell span={7} tablet={5}>
-							Step 2: Ideation and Brainstorming
-						</GridCell>
-						<GridCell span={5} tablet={3}>
-							July 27 - August 2
+						<GridCell span={12}>
+							Step 1. Learn About Blockchain: &nbsp;&nbsp;July 20
+							- July 26
 						</GridCell>
 
-						<GridCell span={7} tablet={5}>
-							Step 3: Creating your Business Model Canvas
-						</GridCell>
-						<GridCell span={5} tablet={3}>
-							August 3 - August 9
+						<GridCell span={12}>
+							Step 2. Ideation and Brainstorming: &nbsp;&nbsp;July
+							27 - August 2
 						</GridCell>
 
-						<GridCell span={7} tablet={5}>
-							Submit your BMC (required)
-						</GridCell>
-						<GridCell span={5} tablet={3}>
-							August 9 (latest by 8/16)
+						<GridCell span={12} tablet={5}>
+							Step 3. Creating your Business Model Canvas:
+							&nbsp;&nbsp;August 3 - August 9
 						</GridCell>
 
-						<GridCell span={7} tablet={5}>
-							Step 4: Writing and Recording Your Pitch
-						</GridCell>
-						<GridCell span={5} tablet={3}>
-							August 10 - August 16
+						<GridCell span={12}>
+							Submit your BMC (required): &nbsp;&nbsp;August 9
+							(latest by 8/16)
 						</GridCell>
 
-						<GridCell span={7} tablet={5}>
-							Step 5: Finalizing and Submitting
-						</GridCell>
-						<GridCell span={5} tablet={3}>
-							August 16 - August 20
+						<GridCell span={12}>
+							Step 4. Writing and Recording Your Pitch:
+							&nbsp;&nbsp;August 10 - August 16
 						</GridCell>
 
-						<GridCell span={7} tablet={5}>
-							Submit final submission! (required)
+						<GridCell span={12}>
+							Step 5. Finalizing and Submitting:
+							&nbsp;&nbsp;August 16 - August 20
 						</GridCell>
-						<GridCell span={5} tablet={3}>
-							August 21 11:59 EDT
+
+						<GridCell span={12}>
+							Submit final submission! (required):
+							&nbsp;&nbsp;August 21 11:59pm EDT
 						</GridCell>
 					</Grid>
 				</div>

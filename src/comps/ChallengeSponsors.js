@@ -209,7 +209,13 @@ function ChallengeSponsors() {
 				/>
 			</Grid>
 
-			<p className="text-center">
+			<p
+				style={{
+					textAlign: 'center',
+					width: '80vw',
+					marginLeft: '10vw'
+				}}
+			>
 				<b>
 					If you are interested in sponsoring/partnering with us for
 					the hackathon, please email us at{' '}

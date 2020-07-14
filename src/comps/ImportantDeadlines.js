@@ -33,31 +33,23 @@ const ImportantDeadlines = ({ id }) => {
 
 				<div className={classes.Descriptions}>
 					<GridRow>
-						<GridCell span={9} tablet={6}>
-							Registration deadline (to get swag pack):
-						</GridCell>
-						<GridCell span={3} tablet={2}>
-							July 31
+						<GridCell span={12}>
+							Registration deadline (to get swag
+							pack):&nbsp;&nbsp; July 31
 						</GridCell>
 
-						<GridCell span={9} tablet={6}>
-							Late registration deadline <b>(required)</b>:
-						</GridCell>
-						<GridCell span={3} tablet={2}>
-							August 10
+						<GridCell span={12}>
+							Late registration deadline <b>(required)</b>
+							:&nbsp;&nbsp; August 10
 						</GridCell>
 
-						<GridCell span={9} tablet={6}>
-							BMC submission deadline <b>(required)</b>:
-						</GridCell>
-						<GridCell span={3} tablet={2}>
-							August 16
+						<GridCell span={12}>
+							BMC submission deadline <b>(required)</b>
+							:&nbsp;&nbsp; August 16
 						</GridCell>
 
-						<GridCell span={9} tablet={6}>
-							Submission deadline <b>(required)</b>:
-						</GridCell>
-						<GridCell span={3} tablet={2}>
+						<GridCell span={12}>
+							Submission deadline <b>(required)</b>:&nbsp;&nbsp;
 							August 21, 11:59pm EDT
 						</GridCell>
 					</GridRow>

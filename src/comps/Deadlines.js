@@ -6,14 +6,14 @@ import MinRequirementsTimeline from './MinRequirementsTimeline';
 
 const Deadlines = () => {
 	return (
-		<Grid style={{ maxWidth: '85vw' }}>
-			<GridCell span={4} tablet={8}>
+		<Grid style={{ maxWidth: '80vw' }}>
+			<GridCell span={4} tablet={8} phone={12}>
 				<ImportantDeadlines />
 			</GridCell>
-			<GridCell span={5} tablet={8} phone={4}>
+			<GridCell span={4} tablet={8} phone={12}>
 				<RecommendedTimeline />
 			</GridCell>
-			<GridCell span={3} tablet={8} phone={4}>
+			<GridCell span={4} tablet={8} phone={12}>
 				<MinRequirementsTimeline />
 			</GridCell>
 		</Grid>

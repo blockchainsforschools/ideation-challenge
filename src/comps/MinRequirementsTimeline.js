@@ -26,25 +26,16 @@ const MinRequirementsTimeline = ({ id }) => {
 					Minimum Requirements Timeline
 				</h1>
 				<Grid className={classes.Descriptions}>
-					<GridCell span={7} tablet={5}>
-						Register by
-					</GridCell>
-					<GridCell span={5} tablet={3}>
-						August 9th
+					<GridCell span={12}>
+						Register by: &nbsp;&nbsp;August 9th
 					</GridCell>
 
-					<GridCell span={7} tablet={5}>
-						Submit BMC by
-					</GridCell>
-					<GridCell span={5} tablet={3}>
-						August 16th
+					<GridCell span={12}>
+						Submit BMC by:&nbsp;&nbsp; August 16th
 					</GridCell>
 
-					<GridCell span={7} tablet={5}>
-						Submit Final by
-					</GridCell>
-					<GridCell span={5} tablet={3}>
-						August 21st
+					<GridCell span={12}>
+						Submit Final by: &nbsp;&nbsp;August 21st
 					</GridCell>
 				</Grid>
 			</div>
