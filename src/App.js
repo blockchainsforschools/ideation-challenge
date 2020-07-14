@@ -8,9 +8,6 @@ import Overview from './comps/Overview';
 import ChallengeSponsors from './comps/ChallengeSponsors';
 import ProjectSupport from './comps/ProjectSupport';
 import ReadyToJoin from './comps/ReadyToJoin';
-import ImportantDeadlines from './comps/ImportantDeadlines';
-import RecommendedTimeline from './comps/RecommendedTimeline';
-import MinRequirementsTimeline from './comps/MinRequirementsTimeline';
 
 import FAQ from './comps/FAQ';
 import Rules from './comps/Rules';
