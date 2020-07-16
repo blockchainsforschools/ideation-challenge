@@ -30,7 +30,7 @@ const useStyles = createUseStyles({
 		TextContainer: {
 			width: `calc(100% - 2rem)`,
 			top: 'unset',
-			bottom: '30vh',
+			bottom: '25vh',
 			left: 0
 		},
 		'@media (max-height: 700px)': {
