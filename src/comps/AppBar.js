@@ -31,16 +31,16 @@ const useStyles = createUseStyles({
 			width: 'calc(100% - 4vw)',
 			marginLeft: '2vw'
 		}
-	},
-	'@media (max-width: 500px)': {
-		LogoIcon: {
-			height: '40px'
-		},
-		LogoText: {
-			fontSize: '1rem',
-			lineHeight: '64px'
-		}
 	}
+	// '@media (max-width: 500px)': {
+	// 	LogoIcon: {
+	// 		height: '40px'
+	// 	},
+	// 	LogoText: {
+	// 		fontSize: '1rem',
+	// 		lineHeight: '64px'
+	// 	}
+	// }
 });
 
 const AppBar = () => {
