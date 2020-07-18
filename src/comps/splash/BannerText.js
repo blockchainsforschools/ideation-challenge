@@ -30,12 +30,12 @@ const useStyles = createUseStyles({
 		TextContainer: {
 			width: `calc(100% - 2rem)`,
 			top: 'unset',
-			bottom: '25vh',
+			bottom: '10%',
 			left: 0
 		},
 		'@media (max-height: 700px)': {
 			TextContainer: {
-				bottom: '10vh'
+				bottom: '10%'
 			}
 		},
 		ApplyButton: {
@@ -52,7 +52,7 @@ const useStyles = createUseStyles({
 				fontSize: '2rem'
 			},
 			TextContainer: {
-				bottom: '5vh'
+				bottom: '5%'
 			}
 		}
 	}
