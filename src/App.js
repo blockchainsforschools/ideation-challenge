@@ -38,11 +38,7 @@ function App() {
 			<br />
 			<br />
 
-			<ChallengeSponsors id="ChallengeSponsors" />
-			<br />
-			<br />
-
-			<Rules id={'Rules'} />
+			<FAQ id="FAQ" />
 			<br />
 			<br />
 
@@ -50,7 +46,11 @@ function App() {
 			<br />
 			<br />
 
-			<FAQ id="FAQ" />
+			<ChallengeSponsors id="ChallengeSponsors" />
+			<br />
+			<br />
+
+			<Rules id={'Rules'} />
 		</ThemeProvider>
 	);
 }

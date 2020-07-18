@@ -54,15 +54,6 @@ const NavMenu = () => {
 				</Link>
 				<Link
 					className={classes.Tab}
-					to="ChallengeSponsors"
-					spy={true}
-					offset={-70}
-					duration={500}
-				>
-					Challenge Sponsors
-				</Link>
-				<Link
-					className={classes.Tab}
 					to="ProjectSupport"
 					spy={true}
 					offset={-70}
@@ -72,12 +63,12 @@ const NavMenu = () => {
 				</Link>
 				<Link
 					className={classes.Tab}
-					to="About"
+					to="timelines"
 					spy={true}
 					offset={-70}
 					duration={500}
 				>
-					About
+					Timelines
 				</Link>
 				<Link
 					className={classes.Tab}
@@ -87,6 +78,24 @@ const NavMenu = () => {
 					duration={500}
 				>
 					FAQ
+				</Link>
+				<Link
+					className={classes.Tab}
+					to="ChallengeSponsors"
+					spy={true}
+					offset={-70}
+					duration={500}
+				>
+					Challenge Sponsors
+				</Link>
+				<Link
+					className={classes.Tab}
+					to="rules"
+					spy={true}
+					offset={-70}
+					duration={500}
+				>
+					Rules
 				</Link>
 			</span>
 

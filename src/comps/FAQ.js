@@ -4,8 +4,8 @@ import { createUseStyles } from 'react-jss';
 const useStyles = createUseStyles({
 	CenterContainer: {
 		display: 'flex',
-		justifyContent: 'center',
-		height: '70vh'
+		justifyContent: 'center'
+		// height: '70vh'
 	},
 	ContentContainer: {
 		width: '80vw'

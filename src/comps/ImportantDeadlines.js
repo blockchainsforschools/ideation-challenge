@@ -1,6 +1,5 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import { Grid, GridCell } from '@rmwc/grid';
 
 const useStyles = createUseStyles({
 	CenterContainer: {
@@ -32,27 +31,33 @@ const ImportantDeadlines = ({ id }) => {
 				<h1 className={classes.Heading}>Important Deadlines</h1>
 
 				<div className={classes.Descriptions}>
-					<Grid>
-						<GridCell span={12}>
-							Registration deadline (to get swag
-							pack):&nbsp;&nbsp; July 31
-						</GridCell>
+					<table>
+						<tr>
+							<td>Registration deadline (to get swag pack):</td>
+							<td>July 31</td>
+						</tr>
 
-						<GridCell span={12}>
-							Late registration deadline <b>(required)</b>
-							:&nbsp;&nbsp; August 10
-						</GridCell>
+						<tr>
+							<td>
+								Late registration deadline <b>(required)</b>:
+							</td>
+							<td>August 10</td>
+						</tr>
 
-						<GridCell span={12}>
-							BMC submission deadline <b>(required)</b>
-							:&nbsp;&nbsp; August 16
-						</GridCell>
+						<tr>
+							<td>
+								BMC submission deadline <b>(required)</b>:
+							</td>
+							<td>August 16</td>
+						</tr>
 
-						<GridCell span={12}>
-							Submission deadline <b>(required)</b>:&nbsp;&nbsp;
-							August 21, 11:59pm EDT
-						</GridCell>
-					</Grid>
+						<tr>
+							<td>
+								Submission deadline <b>(required)</b>:
+							</td>
+							<td>August 21, 11:59pm EDT</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import { Grid, GridCell } from '@rmwc/grid';
 
 const useStyles = createUseStyles({
 	Heading: {
@@ -25,19 +24,22 @@ const MinRequirementsTimeline = ({ id }) => {
 				<h1 className={classes.Heading}>
 					Minimum Requirements Timeline
 				</h1>
-				<Grid className={classes.Descriptions}>
-					<GridCell span={12}>
-						Register by: &nbsp;&nbsp;August 9th
-					</GridCell>
+				<table className={classes.Descriptions}>
+					<tr>
+						<td>Register by:</td>
+						<td>August 9th</td>
+					</tr>
 
-					<GridCell span={12}>
-						Submit BMC by:&nbsp;&nbsp; August 16th
-					</GridCell>
+					<tr>
+						<td>Submit BMC by:</td>
+						<td>August 16th</td>
+					</tr>
 
-					<GridCell span={12}>
-						Submit Final by: &nbsp;&nbsp;August 21st
-					</GridCell>
-				</Grid>
+					<tr>
+						<td>Submit Final by:</td>
+						<td>August 21st</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	);

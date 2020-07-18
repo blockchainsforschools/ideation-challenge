@@ -37,10 +37,10 @@ const useStyles = createUseStyles({
 });
 
 function Container({ children }) {
-	return <div>{children}</div>;
+	return <div style={{ width: '80vw', marginLeft: '10vw' }}>{children}</div>;
 }
 
-function SponsorCell({ alt, src, span, spanTablet, url, width }) {
+function SponsorCell({ alt, src, span, spanTablet, spanPhone, url, width }) {
 	const imageStyles = {
 		maxWidth: '100%',
 		width,
@@ -60,8 +60,14 @@ function SponsorCell({ alt, src, span, spanTablet, url, width }) {
 
 	if (!spanTablet) spanTablet = 4;
 
+	if (!spanPhone) spanPhone = 6;
 	return (
-		<GridCell span={span} tablet={spanTablet} style={cellStyles}>
+		<GridCell
+			span={span}
+			tablet={spanTablet}
+			phone={spanPhone}
+			style={cellStyles}
+		>
 			<img
 				style={imageStyles}
 				alt={alt}
@@ -227,34 +233,5 @@ function ChallengeSponsors() {
 		</Container>
 	);
 }
-//
-// const ChallengeSponsors = ({ id }) => {
-// 	const classes = useStyles();
-// 	return (
-// 		<div className={classes.CenterContainer} id={id}>
-// 			<div className={classes.ContentContainer}>
-// 				<h1 className={classes.Heading}>Challenge Sponsors</h1>
-// 				{/*<div className={classes.FlexCenter}>*/}
-// 				<Grid>
-// 					<GridCell span={6}>
-// 						<img
-// 							className={classes.ConsenSysLogo}
-// 							src={consensysLogo}
-// 							alt="ConsenSys Logo"
-// 						/>
-// 					</GridCell>
-// 					<GridCell span={6}>
-// 						<img
-// 							className={classes.GitcoinLogo}
-// 							src={gitcoinLogo}
-// 							alt="Gitcoin Logo"
-// 						/>
-// 					</GridCell>
-// 				</Grid>
-// 				{/*</div>*/}
-// 			</div>
-// 		</div>
-// 	);
-// };
 
 export default ChallengeSponsors;

@@ -1,3 +1,20 @@
 body {
 	margin: 0;
 }
+
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+}
+td {
+	width: 70%;
+	border-bottom: 10px solid white;
+}
+td+td {
+	width: auto;
+	vertical-align: top;
+}
+tr {
+	min-height: 20px;
+}
