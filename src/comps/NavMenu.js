@@ -90,7 +90,7 @@ const NavMenu = () => {
 				</Link>
 				<Link
 					className={classes.Tab}
-					to="rules"
+					to="Rules"
 					spy={true}
 					offset={-70}
 					duration={500}
