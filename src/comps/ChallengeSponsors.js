@@ -1,5 +1,4 @@
 import React from 'react';
-import { createUseStyles } from 'react-jss';
 
 import { Grid, GridCell } from '@rmwc/grid';
 import '@rmwc/grid/styles';
@@ -7,37 +6,12 @@ import '@rmwc/grid/styles';
 import consensysLogo from '../img/ConsenSys-logo.png';
 import gitcoinLogo from '../img/Gitcoin-logo.png';
 
-const useStyles = createUseStyles({
-	CenterContainer: {
-		display: 'flex',
-		justifyContent: 'center'
-	},
-	ContentContainer: {
-		width: '80vw',
-		display: 'block',
-		textAlign: 'center'
-	},
-	Heading: {
-		color: '#4cbb85',
-		textAlign: 'center'
-	},
-	Paragraph: {
-		fontWeight: 300
-	},
-	ConsenSysLogo: {
-		height: '100px'
-	},
-	GitcoinLogo: {
-		height: '100px'
-	},
-	FlexCenter: {
-		display: 'flex',
-		justifyContent: 'center'
-	}
-});
-
 function Container({ children }) {
-	return <div style={{ width: '80vw', marginLeft: '10vw' }}>{children}</div>;
+	return (
+		<div style={{ display: 'flex', justifyContent: 'center' }}>
+			<div style={{ width: '90vw' }}>{children}</div>
+		</div>
+	);
 }
 
 function SponsorCell({ alt, src, span, spanTablet, spanPhone, url, width }) {
@@ -79,12 +53,9 @@ function SponsorCell({ alt, src, span, spanTablet, spanPhone, url, width }) {
 }
 
 function ChallengeSponsors() {
-	const classes = useStyles();
 	return (
 		<Container>
-			<h1 className={classes.Heading} id={'ChallengeSponsors'}>
-				Sponsors
-			</h1>
+			<h1 id={'ChallengeSponsors'}>Sponsors</h1>
 			<Grid>
 				<SponsorCell
 					alt={'Consensys logo'}
@@ -188,7 +159,7 @@ function ChallengeSponsors() {
 			</Grid>
 
 			<Grid>
-				<GridCell span={4} className={['desktop-only']} />
+				{/*<GridCell span={4} tablet={2} className={['desktop-only']} />*/}
 
 				<SponsorCell
 					alt={'Hack Club Bank Logo'}
@@ -197,13 +168,13 @@ function ChallengeSponsors() {
 					}
 					url={'https://hackclub.com/bank/'}
 					width={'11rem'}
-					span={4}
+					span={12}
 				/>
 			</Grid>
 
-			<h1 className={classes.Heading}>Community Partners</h1>
+			<h1>Community Partners</h1>
 			<Grid>
-				<GridCell span={4} className={['desktop-only']} />
+				{/*<GridCell span={12} tablet={2} className={['desktop-only']} />*/}
 				<SponsorCell
 					alt="AnitaB Logo"
 					url={'https://anitab.org/'}
@@ -211,7 +182,7 @@ function ChallengeSponsors() {
 						'https://blockchainsforschools.org/supporters/anita_b.png'
 					}
 					width="12rem"
-					span={4}
+					span={12}
 				/>
 			</Grid>
 

@@ -14,7 +14,18 @@ td {
 td+td {
 	width: auto;
 	vertical-align: top;
+	text-align: right;
 }
 tr {
 	min-height: 20px;
+}
+h1 {
+	color: #4cbb85;
+	text-align: center;
+}
+
+@media only screen and (max-width: 840px){
+	.desktop-only {
+		display: none;
+	}
 }
