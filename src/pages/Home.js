@@ -43,6 +43,8 @@ export default function Home() {
 			<ChallengeSponsors id="ChallengeSponsors" />
 			<br />
 			<br />
+
+			<Rules />
 		</div>
 	);
 }

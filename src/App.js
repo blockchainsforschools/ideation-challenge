@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import Rules from './comps/Rules';
 import GettingStarted from './pages/GettingStarted';
+import CodeOfConduct from './comps/CodeOfConduct';
 
 function App() {
 	return (
@@ -14,7 +15,7 @@ function App() {
 				<AppBar />
 				<Switch>
 					<Route path={'/'} component={Home} exact />
-					<Route path={'/CoC'} component={Rules} />
+					<Route path={'/CoC'} component={CodeOfConduct} />
 					<Route
 						path={'/getting-started'}
 						component={GettingStarted}

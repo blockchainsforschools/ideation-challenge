@@ -2,6 +2,9 @@ import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { Button } from '@rmwc/button';
 import { Link } from 'react-router-dom';
+import './rules.css';
+
+import bfsIcon from './../img/bfs-icon.png';
 
 const useStyles = createUseStyles({
 	CenterContainer: {
@@ -28,11 +31,7 @@ const Rules = ({ id }) => {
 	return (
 		<div className={classes.CenterContainer} id={id}>
 			<div className={classes.ContentContainer}>
-				<Link to={'/'} style={{ textDecoration: 'none' }}>
-					<Button outlined>&lt;- Back </Button>
-				</Link>
-				<h1 className={classes.Heading}>Code of Conduct: </h1>
-
+				<h1 className={classes.Heading}>Rules:</h1>
 				<ol className={classes.Paragraph}>
 					<li>Participation </li>
 					<ol type={'a'}>

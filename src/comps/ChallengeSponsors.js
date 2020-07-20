@@ -213,9 +213,7 @@ function ChallengeSponsors() {
 
 			<p
 				style={{
-					textAlign: 'center',
-					width: '80vw',
-					marginLeft: '10vw'
+					textAlign: 'center'
 				}}
 			>
 				<b>
