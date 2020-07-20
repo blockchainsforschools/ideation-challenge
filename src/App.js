@@ -1,56 +1,26 @@
 import React from 'react';
 import './App.css';
 import AppBar from './comps/AppBar';
-import SplashBanner from './comps/SplashBanner';
 import ThemeProvider from './comps/ThemeProvider';
-import About from './comps/About';
-import Overview from './comps/Overview';
-import ChallengeSponsors from './comps/ChallengeSponsors';
-import ProjectSupport from './comps/ProjectSupport';
-import ReadyToJoin from './comps/ReadyToJoin';
-
-import FAQ from './comps/FAQ';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
 import Rules from './comps/Rules';
-import Deadlines from './comps/Deadlines';
-// import Prizes from './comps/Prizes';
+import GettingStarted from './pages/GettingStarted';
 
 function App() {
 	return (
 		<ThemeProvider>
-			<AppBar />
-			<SplashBanner />
-			<br />
-			<br />
-
-			<Overview id="Overview" />
-			<br />
-			<br />
-
-			<About id="About" />
-			<br />
-			<br />
-
-			<ProjectSupport id="ProjectSupport" />
-			<br />
-			<br />
-
-			<Deadlines />
-			<br />
-			<br />
-
-			<FAQ id="FAQ" />
-			<br />
-			<br />
-
-			<ReadyToJoin id="ReadyToJoin" />
-			<br />
-			<br />
-
-			<ChallengeSponsors id="ChallengeSponsors" />
-			<br />
-			<br />
-
-			<Rules id={'Rules'} />
+			<BrowserRouter>
+				<AppBar />
+				<Switch>
+					<Route path={'/'} component={Home} exact />
+					<Route path={'/CoC'} component={Rules} />
+					<Route
+						path={'/getting-started'}
+						component={GettingStarted}
+					/>
+				</Switch>
+			</BrowserRouter>
 		</ThemeProvider>
 	);
 }

@@ -7,7 +7,8 @@ const useStyles = createUseStyles({
 		justifyContent: 'center'
 	},
 	ContentContainer: {
-		width: '80vw'
+		width: '80vw',
+		padding: '0 2rem'
 	},
 	Heading: {
 		color: '#4cbb85',

@@ -1,10 +1,14 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
+import { Button } from '@rmwc/button';
+import { Link } from 'react-router-dom';
 
 const useStyles = createUseStyles({
 	CenterContainer: {
 		display: 'flex',
-		justifyContent: 'center'
+		justifyContent: 'center',
+		marginTop: '8rem',
+		marginBottom: '8rem'
 	},
 	ContentContainer: {
 		width: '80vw'
@@ -24,7 +28,10 @@ const Rules = ({ id }) => {
 	return (
 		<div className={classes.CenterContainer} id={id}>
 			<div className={classes.ContentContainer}>
-				<h1 className={classes.Heading}>Rules:</h1>
+				<Link to={'/'} style={{ textDecoration: 'none' }}>
+					<Button outlined>&lt;- Back </Button>
+				</Link>
+				<h1 className={classes.Heading}>Code of Conduct: </h1>
 
 				<ol className={classes.Paragraph}>
 					<li>Participation </li>
@@ -120,6 +127,18 @@ const Rules = ({ id }) => {
 					suspect a violation, please report it to
 					hackathon@blockchainsforschools.org.{' '}
 				</p>
+				<div style={{ textAlign: 'center' }}>
+					<Button
+						unelevated
+						onClick={() =>
+							window.open(
+								'https://hackathonbfs.typeform.com/to/i0zS8OsY'
+							)
+						}
+					>
+						Register Here!
+					</Button>
+				</div>
 			</div>
 		</div>
 	);

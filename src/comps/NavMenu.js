@@ -3,6 +3,7 @@ import { createUseStyles } from 'react-jss';
 // import { IconButton } from '@rmwc/icon-button';
 import { Link } from 'react-scroll';
 import '@rmwc/icon-button/styles';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 
 const desktopMin = 1180;
 
@@ -22,7 +23,8 @@ const useStyles = createUseStyles({
 	Tab: {
 		marginLeft: '2rem',
 		color: `rgba(0, 0, 0, 0.8)`,
-		cursor: 'pointer'
+		cursor: 'pointer',
+		textDecoration: 'none'
 	},
 	BurgerMenu: {
 		display: 'none'
@@ -39,64 +41,32 @@ const useStyles = createUseStyles({
 
 const NavMenu = () => {
 	const classes = useStyles();
+	const location = useLocation();
 
 	return (
 		<span className={classes.NavContainer}>
 			<span className={classes.TabbedMenu}>
-				<Link
+				<HomeLinks />
+
+				<RouterLink
 					className={classes.Tab}
-					to="Overview"
+					to="/getting-started"
 					spy={true}
 					offset={-70}
 					duration={500}
 				>
-					Overview
-				</Link>
-				<Link
+					Getting Started
+				</RouterLink>
+
+				<RouterLink
 					className={classes.Tab}
-					to="ProjectSupport"
+					to="/CoC"
 					spy={true}
 					offset={-70}
 					duration={500}
 				>
-					Project Support
-				</Link>
-				<Link
-					className={classes.Tab}
-					to="timelines"
-					spy={true}
-					offset={-70}
-					duration={500}
-				>
-					Timelines
-				</Link>
-				<Link
-					className={classes.Tab}
-					to="FAQ"
-					spy={true}
-					offset={-70}
-					duration={500}
-				>
-					FAQ
-				</Link>
-				<Link
-					className={classes.Tab}
-					to="ChallengeSponsors"
-					spy={true}
-					offset={-70}
-					duration={500}
-				>
-					Challenge Sponsors
-				</Link>
-				<Link
-					className={classes.Tab}
-					to="Rules"
-					spy={true}
-					offset={-70}
-					duration={500}
-				>
-					Rules
-				</Link>
+					Code of Conduct
+				</RouterLink>
 			</span>
 
 			<span className={classes.BurgerMenu}>
@@ -105,5 +75,55 @@ const NavMenu = () => {
 		</span>
 	);
 };
+
+function HomeLinks() {
+	const classes = useStyles();
+	const location = useLocation();
+
+	const routes = [
+		{
+			to: 'Overview',
+			text: 'Overview'
+		},
+		{
+			to: 'ProjectSupport',
+			text: 'Project Support'
+		},
+		{
+			to: 'timelines',
+			text: 'Timelines'
+		},
+		{
+			to: 'FAQ',
+			text: 'FAQ'
+		},
+		{
+			to: 'ChallengeSponsors',
+			text: 'Challenge Sponsors'
+		}
+	];
+
+	return (
+		<span>
+			{location.pathname === '/'
+				? routes.map(page => (
+						<Link
+							className={classes.Tab}
+							to={page.to}
+							spy={true}
+							offset={-70}
+							duration={500}
+						>
+							{page.text}
+						</Link>
+				  ))
+				: routes.map(page => (
+						<RouterLink className={classes.Tab} to="/">
+							{page.text}
+						</RouterLink>
+				  ))}
+		</span>
+	);
+}
 
 export default NavMenu;
