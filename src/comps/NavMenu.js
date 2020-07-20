@@ -81,6 +81,11 @@ const routes = [
 		to: '/CoC',
 		text: 'Code of Conduct',
 		external: true
+	},
+	{
+		to: '/rules',
+		text: 'Rules',
+		external: true
 	}
 ];
 

@@ -20,6 +20,7 @@ function App() {
 						path={'/getting-started'}
 						component={GettingStarted}
 					/>
+					<Route path={'/rules'} component={Rules} />
 				</Switch>
 			</BrowserRouter>
 		</ThemeProvider>
