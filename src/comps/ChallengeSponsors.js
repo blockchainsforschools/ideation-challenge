@@ -5,6 +5,7 @@ import '@rmwc/grid/styles';
 
 import consensysLogo from '../img/ConsenSys-logo.png';
 import gitcoinLogo from '../img/Gitcoin-logo.png';
+import ibmLogo from '../img/ibm-logo.png';
 
 function Container({ children }) {
 	return (
@@ -81,12 +82,10 @@ function ChallengeSponsors() {
 				/>
 
 				<SponsorCell
-					alt={'Cryptonomic Logo'}
-					src={
-						'https://blockchainsforschools.org/supporters/cryptonomic.png'
-					}
-					url={'https://cryptonomic.tech/'}
-					width="13rem"
+					alt={'IMB Logo'}
+					src={ibmLogo}
+					url={'https://ibm.com'}
+					width="10rem"
 				/>
 			</Grid>
 			<Grid>
@@ -122,15 +121,6 @@ function ChallengeSponsors() {
 				/>
 
 				<SponsorCell
-					alt={'Gemini Logo'}
-					src={
-						'https://blockchainsforschools.org/supporters/gemini.png'
-					}
-					url={'https://gemini.com/'}
-					width={'9rem'}
-				/>
-
-				<SponsorCell
 					alt={'Cisco Logo'}
 					src={
 						'https://blockchainsforschools.org/supporters/cisco.png'
@@ -156,11 +146,28 @@ function ChallengeSponsors() {
 					url={'https://www.kadena.io/'}
 					width={'9rem'}
 				/>
+				<SponsorCell
+					alt={'Cryptonomic Logo'}
+					src={
+						'https://blockchainsforschools.org/supporters/cryptonomic.png'
+					}
+					url={'https://cryptonomic.tech/'}
+					width="13rem"
+				/>
 			</Grid>
 
 			<Grid>
-				{/*<GridCell span={4} tablet={2} className={['desktop-only']} />*/}
+				<GridCell span={3} className={['desktop-only']} />
 
+				<SponsorCell
+					alt={'Gemini Logo'}
+					src={
+						'https://blockchainsforschools.org/supporters/gemini.png'
+					}
+					url={'https://gemini.com/'}
+					width={'9rem'}
+					span={3}
+				/>
 				<SponsorCell
 					alt={'Hack Club Bank Logo'}
 					src={
@@ -168,7 +175,7 @@ function ChallengeSponsors() {
 					}
 					url={'https://hackclub.com/bank/'}
 					width={'11rem'}
-					span={12}
+					span={3}
 				/>
 			</Grid>
 
