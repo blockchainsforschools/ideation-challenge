@@ -132,7 +132,9 @@ const NavMenu = () => {
 								</Link>
 							) : (
 								<RouterLink
-									to={`/#${page.to}`}
+									to={`${page.external ? '/' : '/#'}${
+										page.to
+									}`}
 									style={{ textDecoration: 'none' }}
 									onClick={() => setMenuOpen(false)}
 								>
@@ -165,7 +167,10 @@ function HomeLinks() {
 						{page.text}
 					</Link>
 				) : (
-					<RouterLink className={classes.Tab} to={`/#${page.to}`}>
+					<RouterLink
+						className={classes.Tab}
+						to={`${page.external ? '/' : '/#'}${page.to}`}
+					>
 						{page.text}
 					</RouterLink>
 				)
