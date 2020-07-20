@@ -6,6 +6,8 @@ import '@rmwc/grid/styles';
 import consensysLogo from '../img/ConsenSys-logo.png';
 import gitcoinLogo from '../img/Gitcoin-logo.png';
 import ibmLogo from '../img/ibm-logo.png';
+import builtByGirls from '../img/built-by-girls.png';
+import hackDiversity from '../img/hack-diversity.png';
 
 function Container({ children }) {
 	return (
@@ -182,6 +184,7 @@ function ChallengeSponsors() {
 			<h1>Community Partners</h1>
 			<Grid>
 				{/*<GridCell span={12} tablet={2} className={['desktop-only']} />*/}
+
 				<SponsorCell
 					alt="AnitaB Logo"
 					url={'https://anitab.org/'}
@@ -189,7 +192,22 @@ function ChallengeSponsors() {
 						'https://blockchainsforschools.org/supporters/anita_b.png'
 					}
 					width="12rem"
-					span={12}
+					span={4}
+				/>
+				<SponsorCell
+					alt="Built By Girls Logo"
+					url={'https://builtbygirls.com'}
+					src={builtByGirls}
+					width="14rem"
+					span={4}
+				/>
+
+				<SponsorCell
+					alt="Hack Diversity Logo"
+					url={'https://hackdiversity.com'}
+					src={hackDiversity}
+					width="14rem"
+					span={4}
 				/>
 			</Grid>
 
