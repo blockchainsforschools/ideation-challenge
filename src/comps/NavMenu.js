@@ -56,11 +56,11 @@ const routes = [
 		text: 'Overview'
 	},
 
-	{
-		to: '/getting-started',
-		text: 'Getting Started',
-		external: true
-	},
+	// {
+	// 	to: '/getting-started',
+	// 	text: 'Getting Started',
+	// 	external: true
+	// },
 	{
 		to: 'ProjectSupport',
 		text: 'Project Support'
