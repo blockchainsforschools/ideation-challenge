@@ -8,6 +8,7 @@ import gitcoinLogo from '../img/Gitcoin-logo.png';
 import ibmLogo from '../img/ibm-logo.png';
 import builtByGirls from '../img/built-by-girls.png';
 import hackDiversity from '../img/hack-diversity.png';
+import digitalAsset from '../img/digital-asset.png';
 
 function Container({ children }) {
 	return (
@@ -159,7 +160,13 @@ function ChallengeSponsors() {
 			</Grid>
 
 			<Grid>
-				<GridCell span={3} className={['desktop-only']} />
+				<SponsorCell
+					alt={'Digital Asset Logo'}
+					src={digitalAsset}
+					url={'https://www.digitalasset.com/'}
+					width={'16rem'}
+					span={4}
+				/>
 
 				<SponsorCell
 					alt={'Gemini Logo'}
@@ -167,8 +174,8 @@ function ChallengeSponsors() {
 						'https://blockchainsforschools.org/supporters/gemini.png'
 					}
 					url={'https://gemini.com/'}
-					width={'9rem'}
-					span={3}
+					width={'12rem'}
+					span={4}
 				/>
 				<SponsorCell
 					alt={'Hack Club Bank Logo'}
@@ -176,8 +183,8 @@ function ChallengeSponsors() {
 						'https://blockchainsforschools.org/hack-club-branding.png'
 					}
 					url={'https://hackclub.com/bank/'}
-					width={'11rem'}
-					span={3}
+					width={'12rem'}
+					span={4}
 				/>
 			</Grid>
 
