@@ -1,5 +1,5 @@
 import React from 'react';
-import {createUseStyles} from "react-jss";
+import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
 	globe: {
@@ -9,9 +9,9 @@ const useStyles = createUseStyles({
 		zIndex: -1,
 		opacity: 0.7
 	},
-	"@media (max-height: 700px)": {
+	'@media (max-height: 700px)': {
 		globe: {
-			height: "92vh"
+			height: '92vh'
 		}
 	}
 });
@@ -38,12 +38,7 @@ const Globe = () => {
 		}
 	}, [ref]);
 
-	return (
-		<div
-			ref={ref}
-			className={classes.globe}
-		/>
-	);
+	return <div ref={ref} className={classes.globe} />;
 };
 
 export default Globe;

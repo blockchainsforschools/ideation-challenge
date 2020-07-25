@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const useInnerHeight = () => {
 	const [height, setHeight] = React.useState(window.innerHeight);
@@ -8,9 +8,9 @@ const useInnerHeight = () => {
 	}, []);
 
 	React.useEffect(() => {
-		window.addEventListener("resize", listener);
+		window.addEventListener('resize', listener);
 
-		return () => window.removeEventListener("resize", listener);
+		return () => window.removeEventListener('resize', listener);
 	});
 
 	return height;

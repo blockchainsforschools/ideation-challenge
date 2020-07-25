@@ -11,7 +11,7 @@ td {
 	width: 70%;
 	border-bottom: 10px solid white;
 }
-td+td {
+td + td {
 	width: auto;
 	vertical-align: top;
 	text-align: right;
@@ -24,11 +24,11 @@ h1 {
 	text-align: center;
 }
 
-@media only screen and (max-width: 840px){
+@media only screen and (max-width: 840px) {
 	.desktop-only {
 		display: none;
 	}
 }
-a{
+a {
 	text-decoration: none;
 }

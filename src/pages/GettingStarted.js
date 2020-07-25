@@ -176,7 +176,7 @@ const GettingStarted = ({ id }) => {
 					write in complete sentences.
 				</p>
 				<p style={{ fontWeight: 300 }}>
-					Submissions are due by: July 26th
+					Submissions are due by: July 26th, 11:59pm
 				</p>
 				<Button
 					onClick={window.open.bind(

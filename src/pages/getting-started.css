@@ -1,15 +1,14 @@
 p {
-    font-weight: 300;
-
+	font-weight: 300;
 }
 li {
-    margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 ol {
-    margin: 0;
-    padding: 15px;
+	margin: 0;
+	padding: 15px;
 }
 
 a {
-    text-decoration: underline;
+	text-decoration: underline;
 }

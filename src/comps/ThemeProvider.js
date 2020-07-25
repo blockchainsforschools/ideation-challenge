@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
-import { ThemeProvider as Provider } from "@rmwc/theme";
+import { ThemeProvider as Provider } from '@rmwc/theme';
 
 const ThemeProvider = ({ children }) => {
 	return (
 		<Provider
 			options={{
-				primary: "#4cbb85",
-				secondary: "#f67c99",
-				onPrimary: "white"
+				primary: '#4cbb85',
+				secondary: '#f67c99',
+				onPrimary: 'white'
 			}}
 		>
 			{children}
