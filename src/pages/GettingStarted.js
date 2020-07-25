@@ -175,7 +175,20 @@ const GettingStarted = ({ id }) => {
 					points summarizing what you have learned this week. Please
 					write in complete sentences.
 				</p>
-				<p>Submit here: Coming soon!</p>
+				<p style={{ fontWeight: 300 }}>
+					Submissions are due by: July 26th
+				</p>
+				<Button
+					onClick={window.open.bind(
+						null,
+						'https://hackathonbfs.typeform.com/to/GJQ9ZfZQ'
+					)}
+					raised
+				>
+					Submit here
+				</Button>
+				<br />
+				<br />
 				<br />
 
 				<h2>Step 2: Ideation and Brainstorming</h2>
