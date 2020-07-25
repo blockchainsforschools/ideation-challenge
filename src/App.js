@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Rules from './comps/Rules';
 import GettingStarted from './pages/GettingStarted';
 import CodeOfConduct from './comps/CodeOfConduct';
+import Error404 from './comps/Error404';
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 						component={GettingStarted}
 					/>
 					<Route path={'/rules'} component={Rules} />
+					<Route path={'/'} component={Error404} />
 				</Switch>
 			</BrowserRouter>
 		</ThemeProvider>
