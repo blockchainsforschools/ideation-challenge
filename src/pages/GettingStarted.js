@@ -185,7 +185,7 @@ const GettingStarted = ({ id }) => {
 					)}
 					raised
 				>
-					Submit here
+					Submit Week 1
 				</Button>
 				<br />
 				<br />
@@ -242,6 +242,17 @@ const GettingStarted = ({ id }) => {
 					<b style={{ textDecoration: 'underline' }}>ten</b>{' '}
 					brainstormed solutions. Submit your response as a PDF.
 				</p>
+				<Button
+					onClick={window.open.bind(
+						null,
+						'https://hackathonbfs.typeform.com/to/KqqB3Dwo'
+					)}
+					raised
+				>
+					Submit Week 2
+				</Button>
+				<br />
+				<br />
 
 				<br />
 				<h2>Step 3: Creating your Business Model Canvas</h2>
@@ -297,7 +308,18 @@ const GettingStarted = ({ id }) => {
 				<p>
 					<b>Deliverable:</b> Upload your completed BMC as a PDF.
 				</p>
-				<p>Submit here: Coming Soon!</p>
+				<p>Submissions are due by August 16th</p>
+				<Button
+					onClick={window.open.bind(
+						null,
+						'https://hackathonbfs.typeform.com/to/sNNwXvqi'
+					)}
+					raised
+				>
+					Submit Week 3
+				</Button>
+				<br />
+				<br />
 
 				<br />
 				<h2>Step 4: Writing and Recording Your Pitch</h2>
@@ -351,7 +373,18 @@ const GettingStarted = ({ id }) => {
 					improvements to your pitch that you plan to make in the
 					final week.
 				</p>
-				<p>Submit here: Coming Soon!</p>
+				<Button
+					onClick={window.open.bind(
+						null,
+						'https://hackathonbfs.typeform.com/to/zIvLHqWT'
+					)}
+					raised
+				>
+					Submit Week 4
+				</Button>
+				<br />
+				<br />
+
 				<br />
 				<h2>Step 5: Finalizing and Submitting</h2>
 				<p>
@@ -374,7 +407,17 @@ const GettingStarted = ({ id }) => {
 					written submission as well as the link to your video pitch
 					on YouTube. Congratulations, and thank you for competing!
 				</p>
-				<p>Submit here: Coming Soon!</p>
+				<Button
+					onClick={window.open.bind(
+						null,
+						'https://hackathonbfs.typeform.com/to/NYq5aHMX'
+					)}
+					raised
+				>
+					Submit Final Deliverable
+				</Button>
+				<br />
+				<br />
 			</div>
 		</div>
 	);
