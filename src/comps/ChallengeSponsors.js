@@ -9,6 +9,7 @@ import ibmLogo from '../img/ibm-logo.png';
 import builtByGirls from '../img/built-by-girls.png';
 import hackDiversity from '../img/hack-diversity.png';
 import digitalAsset from '../img/digital-asset.png';
+import stickerMule from '../img/sticker-mule.svg';
 
 function Container({ children }) {
 	return (
@@ -161,11 +162,17 @@ function ChallengeSponsors() {
 
 			<Grid>
 				<SponsorCell
+					alt={'Sticker Mule logo'}
+					src={stickerMule}
+					url={'https://stickermule.com/'}
+					width={'12rem'}
+				/>
+
+				<SponsorCell
 					alt={'Digital Asset Logo'}
 					src={digitalAsset}
 					url={'https://www.digitalasset.com/'}
 					width={'16rem'}
-					span={4}
 				/>
 
 				<SponsorCell
@@ -175,7 +182,6 @@ function ChallengeSponsors() {
 					}
 					url={'https://gemini.com/'}
 					width={'12rem'}
-					span={4}
 				/>
 				<SponsorCell
 					alt={'Hack Club Bank Logo'}
@@ -184,7 +190,6 @@ function ChallengeSponsors() {
 					}
 					url={'https://hackclub.com/bank/'}
 					width={'12rem'}
-					span={4}
 				/>
 			</Grid>
 

@@ -242,6 +242,9 @@ const GettingStarted = ({ id }) => {
 					<b style={{ textDecoration: 'underline' }}>ten</b>{' '}
 					brainstormed solutions. Submit your response as a PDF.
 				</p>
+				<p style={{ fontWeight: 300 }}>
+					Submissions are due by: August 2nd, 11:59pm
+				</p>
 				<Button
 					onClick={window.open.bind(
 						null,
@@ -308,7 +311,7 @@ const GettingStarted = ({ id }) => {
 				<p>
 					<b>Deliverable:</b> Upload your completed BMC as a PDF.
 				</p>
-				<p>Submissions are due by August 16th</p>
+				<p>Submissions are due by August 9th</p>
 				<Button
 					onClick={window.open.bind(
 						null,
@@ -373,6 +376,9 @@ const GettingStarted = ({ id }) => {
 					improvements to your pitch that you plan to make in the
 					final week.
 				</p>
+				<p style={{ fontWeight: 300 }}>
+					Submissions are due by: July 16th, 11:59pm
+				</p>
 				<Button
 					onClick={window.open.bind(
 						null,
@@ -406,6 +412,9 @@ const GettingStarted = ({ id }) => {
 					<b>Deliverable:</b> Submit the PDF containing your final
 					written submission as well as the link to your video pitch
 					on YouTube. Congratulations, and thank you for competing!
+				</p>
+				<p style={{ fontWeight: 300 }}>
+					Submissions are due by: August 21st 11:59pm
 				</p>
 				<Button
 					onClick={window.open.bind(
