@@ -346,6 +346,13 @@ const GettingStarted = ({ id }) => {
 				<p>
 					<a
 						href={
+							'https://docs.google.com/document/d/1ZYkpQUI-w-eI5kD9pFlIK-N_hF_MfyHeFpvAz1LD38E/edit?usp=sharing'
+						}
+					>
+						Judging Rubric
+					</a>
+					<a
+						href={
 							'https://www.google.com/url?q=https://www.coxblue.com/17-things-you-need-to-consider-when-pitching-your-startup/&sa=D&ust=1595261655475000&usg=AOvVaw2NcF7Uq3bbl5SoaZAlBYI5'
 						}
 					>
