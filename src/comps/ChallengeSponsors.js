@@ -207,6 +207,7 @@ function ChallengeSponsors() {
 					src={ben}
 					width="10rem"
 					span={3}
+					spanPhone={6}
 				/>
 				<SponsorCell
 					alt="AnitaB Logo"
@@ -216,6 +217,7 @@ function ChallengeSponsors() {
 					}
 					width="10rem"
 					span={3}
+					spanPhone={6}
 				/>
 				<SponsorCell
 					alt="Built By Girls Logo"
@@ -223,6 +225,7 @@ function ChallengeSponsors() {
 					src={builtByGirls}
 					width="10rem"
 					span={3}
+					spanPhone={6}
 				/>
 
 				<SponsorCell
@@ -231,6 +234,7 @@ function ChallengeSponsors() {
 					src={hackDiversity}
 					width="10rem"
 					span={3}
+					spanPhone={6}
 				/>
 			</Grid>
 
