@@ -37,11 +37,11 @@ function SponsorCell({ alt, src, span, spanTablet, spanPhone, url, width }) {
 		height: '10rem'
 	};
 
-	if (!span) span = 3;
+	if (!span) span = 2;
 
-	if (!spanTablet) spanTablet = 4;
+	if (!spanTablet) spanTablet = 2;
 
-	if (!spanPhone) spanPhone = 6;
+	if (!spanPhone) spanPhone = 2;
 	return (
 		<GridCell
 			span={span}
@@ -68,14 +68,14 @@ function ChallengeSponsors() {
 					alt={'Consensys logo'}
 					src={consensysLogo}
 					url={'https://consensys.net/'}
-					width="15rem"
+					width="10rem"
 				/>
 
 				<SponsorCell
 					alt={'Gitcoin logo'}
 					src={gitcoinLogo}
 					url={'https://gitcoin.co/'}
-					width="15rem"
+					width="10rem"
 				/>
 
 				<SponsorCell
@@ -84,37 +84,35 @@ function ChallengeSponsors() {
 						'https://blockchainsforschools.org/microsoft-branding.png'
 					}
 					url={'https://www.microsoft.com'}
-					width="15rem"
+					width="10rem"
 				/>
 
 				<SponsorCell
 					alt={'IMB Logo'}
 					src={ibmLogo}
 					url={'https://ibm.com'}
-					width="10rem"
+					width="9rem"
 				/>
-			</Grid>
-			<Grid>
 				<SponsorCell
 					alt={'Ey Logo'}
 					src={'https://blockchainsforschools.org/supporters/ey.png'}
 					url={'https://www.ey.com/'}
+					width={'8rem'}
 				/>
 
 				<SponsorCell
 					alt={'Amazon Logo'}
 					src={'https://blockchainsforschools.org/supporters/aws.png'}
 					url={'https://aws.com'}
-					width={'9rem'}
+					width={'7rem'}
 				/>
-
 				<SponsorCell
 					alt={'Ethereum Logo'}
 					src={
 						'https://blockchainsforschools.org/ethereum-branding.png'
 					}
 					url={'https://ethereum.org'}
-					width={'9rem'}
+					width={'8rem'}
 				/>
 
 				<SponsorCell
@@ -123,7 +121,7 @@ function ChallengeSponsors() {
 						'https://blockchainsforschools.org/supporters/citi.png'
 					}
 					url={'https://www.citigroup.com/citi/'}
-					width={'7rem'}
+					width={'6rem'}
 				/>
 
 				<SponsorCell
@@ -132,7 +130,7 @@ function ChallengeSponsors() {
 						'https://blockchainsforschools.org/supporters/cisco.png'
 					}
 					url={'https://cisco.com/'}
-					width={'10rem'}
+					width={'8rem'}
 				/>
 
 				<SponsorCell
@@ -141,7 +139,7 @@ function ChallengeSponsors() {
 						'https://blockchainsforschools.org/supporters/trail-of-bits.png'
 					}
 					url={'https://www.trailofbits.com/'}
-					width={'9rem'}
+					width={'8rem'}
 				/>
 
 				<SponsorCell
@@ -160,9 +158,8 @@ function ChallengeSponsors() {
 					url={'https://cryptonomic.tech/'}
 					width="13rem"
 				/>
-			</Grid>
 
-			<Grid>
+				<GridCell span={1} className={'desktop-only'} />
 				<SponsorCell
 					alt={'Akamai logo'}
 					src={akamai}
@@ -186,20 +183,17 @@ function ChallengeSponsors() {
 					width={'12rem'}
 				/>
 				<SponsorCell
+					alt={'Sticker Mule logo'}
+					src={stickerMule}
+					url={'https://stickermule.com/'}
+					width={'12rem'}
+				/>
+				<SponsorCell
 					alt={'Hack Club Bank Logo'}
 					src={
 						'https://blockchainsforschools.org/hack-club-branding.png'
 					}
 					url={'https://hackclub.com/bank/'}
-					width={'12rem'}
-				/>
-			</Grid>
-			<Grid>
-				<SponsorCell
-					span={12}
-					alt={'Sticker Mule logo'}
-					src={stickerMule}
-					url={'https://stickermule.com/'}
 					width={'12rem'}
 				/>
 			</Grid>
@@ -211,7 +205,8 @@ function ChallengeSponsors() {
 					alt="BEN Logo"
 					url={'https://blockchainedu.org/'}
 					src={ben}
-					width="12rem"
+					width="10rem"
+					span={3}
 				/>
 				<SponsorCell
 					alt="AnitaB Logo"
@@ -219,20 +214,23 @@ function ChallengeSponsors() {
 					src={
 						'https://blockchainsforschools.org/supporters/anita_b.png'
 					}
-					width="12rem"
+					width="10rem"
+					span={3}
 				/>
 				<SponsorCell
 					alt="Built By Girls Logo"
 					url={'https://builtbygirls.com'}
 					src={builtByGirls}
-					width="14rem"
+					width="10rem"
+					span={3}
 				/>
 
 				<SponsorCell
 					alt="Hack Diversity Logo"
 					url={'https://hackdiversity.com'}
 					src={hackDiversity}
-					width="14rem"
+					width="10rem"
+					span={3}
 				/>
 			</Grid>
 

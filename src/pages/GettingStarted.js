@@ -345,6 +345,7 @@ const GettingStarted = ({ id }) => {
 				<p>Resources:</p>
 				<p>
 					<a href={'/judging-rubric.pdf'}>Judging Rubric</a>
+					<br />
 					<a
 						href={
 							'https://www.google.com/url?q=https://www.coxblue.com/17-things-you-need-to-consider-when-pitching-your-startup/&sa=D&ust=1595261655475000&usg=AOvVaw2NcF7Uq3bbl5SoaZAlBYI5'
