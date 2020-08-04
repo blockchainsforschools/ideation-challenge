@@ -47,7 +47,7 @@ const GettingStarted = ({ id }) => {
 								textDecoration: 'underline'
 							}}
 							href={
-								'https://join.slack.com/t/hackbfs/shared_invite/zt-frkbf2y9-6DW9b78MNA2ihMkuzOA8lA'
+								'https://hackbfs.slack.com/join/shared_invite/zt-gh2iw3i9-gO15Z473juR4M6K_LKIB6A#/'
 							}
 						>
 							<b>Join the Slack</b>
