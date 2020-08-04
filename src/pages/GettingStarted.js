@@ -311,7 +311,7 @@ const GettingStarted = ({ id }) => {
 				<p>
 					<b>Deliverable:</b> Upload your completed BMC as a PDF.
 				</p>
-				<p>Submissions are due by August 9th</p>
+				<p>Submissions are due by August 16th, 11:59pm</p>
 				<Button
 					onClick={window.open.bind(
 						null,
@@ -344,13 +344,7 @@ const GettingStarted = ({ id }) => {
 
 				<p>Resources:</p>
 				<p>
-					<a
-						href={
-							'https://docs.google.com/document/d/1ZYkpQUI-w-eI5kD9pFlIK-N_hF_MfyHeFpvAz1LD38E/edit?usp=sharing'
-						}
-					>
-						Judging Rubric
-					</a>
+					<a href={'/judging-rubric.pdf'}>Judging Rubric</a>
 					<a
 						href={
 							'https://www.google.com/url?q=https://www.coxblue.com/17-things-you-need-to-consider-when-pitching-your-startup/&sa=D&ust=1595261655475000&usg=AOvVaw2NcF7Uq3bbl5SoaZAlBYI5'
@@ -384,7 +378,7 @@ const GettingStarted = ({ id }) => {
 					final week.
 				</p>
 				<p style={{ fontWeight: 300 }}>
-					Submissions are due by: July 16th, 11:59pm
+					Submissions are due by: August 16th, 11:59pm
 				</p>
 				<Button
 					onClick={window.open.bind(
