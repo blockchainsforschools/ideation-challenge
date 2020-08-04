@@ -10,6 +10,8 @@ import builtByGirls from '../img/built-by-girls.png';
 import hackDiversity from '../img/hack-diversity.png';
 import digitalAsset from '../img/digital-asset.png';
 import stickerMule from '../img/sticker-mule.svg';
+import akamai from '../img/akamai.png';
+import ben from '../img/ben.png';
 
 function Container({ children }) {
 	return (
@@ -162,9 +164,9 @@ function ChallengeSponsors() {
 
 			<Grid>
 				<SponsorCell
-					alt={'Sticker Mule logo'}
-					src={stickerMule}
-					url={'https://stickermule.com/'}
+					alt={'Akamai logo'}
+					src={akamai}
+					url={'https://akamai.com/'}
 					width={'12rem'}
 				/>
 
@@ -192,11 +194,25 @@ function ChallengeSponsors() {
 					width={'12rem'}
 				/>
 			</Grid>
+			<Grid>
+				<SponsorCell
+					span={12}
+					alt={'Sticker Mule logo'}
+					src={stickerMule}
+					url={'https://stickermule.com/'}
+					width={'12rem'}
+				/>
+			</Grid>
 
 			<h1>Community Partners</h1>
 			<Grid>
 				{/*<GridCell span={12} tablet={2} className={['desktop-only']} />*/}
-
+				<SponsorCell
+					alt="BEN Logo"
+					url={'https://blockchainedu.org/'}
+					src={ben}
+					width="12rem"
+				/>
 				<SponsorCell
 					alt="AnitaB Logo"
 					url={'https://anitab.org/'}
@@ -204,14 +220,12 @@ function ChallengeSponsors() {
 						'https://blockchainsforschools.org/supporters/anita_b.png'
 					}
 					width="12rem"
-					span={4}
 				/>
 				<SponsorCell
 					alt="Built By Girls Logo"
 					url={'https://builtbygirls.com'}
 					src={builtByGirls}
 					width="14rem"
-					span={4}
 				/>
 
 				<SponsorCell
@@ -219,7 +233,6 @@ function ChallengeSponsors() {
 					url={'https://hackdiversity.com'}
 					src={hackDiversity}
 					width="14rem"
-					span={4}
 				/>
 			</Grid>
 
