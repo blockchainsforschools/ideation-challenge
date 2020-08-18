@@ -14,6 +14,7 @@ import ben from '../img/ben.png';
 import mozilla from '../img/mozilla-builders.png';
 import tqtezos from '../img/tq-tezos.svg';
 import mitVms from '../img/mit-vms.png';
+import mitSandbox from '../img/mit-sandbox.png';
 
 import Grid from '@material-ui/core/Grid';
 
@@ -237,6 +238,12 @@ function ChallengeSponsors() {
 						alt="Hack Diversity Logo"
 						url={'https://vms.mit.edu/'}
 						src={mitVms}
+						width={'12rem'}
+					/>
+					<SponsorCell
+						alt="Hack Diversity Logo"
+						url={'http://sandbox.mit.edu/'}
+						src={mitSandbox}
 						width={'12rem'}
 					/>
 				</Grid>
