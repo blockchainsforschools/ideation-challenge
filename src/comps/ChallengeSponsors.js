@@ -13,6 +13,7 @@ import akamai from '../img/akamai.png';
 import ben from '../img/ben.png';
 import mozilla from '../img/mozilla-builders.png';
 import tqtezos from '../img/tq-tezos.svg';
+import mitVms from '../img/mit-vms.png';
 
 import Grid from '@material-ui/core/Grid';
 
@@ -230,6 +231,12 @@ function ChallengeSponsors() {
 						url={
 							'https://tqtezos.com/?utm_source=www.hackbfs.com&utm_medium=referral'
 						}
+						width={'12rem'}
+					/>
+					<SponsorCell
+						alt="Hack Diversity Logo"
+						url={'https://vms.mit.edu/'}
+						src={mitVms}
 						width={'12rem'}
 					/>
 				</Grid>
