@@ -63,7 +63,7 @@ const Rules = ({ id }) => {
 						</li>
 						<li>
 							The final submission must consist of two parts: (1)
-							a one page PDF upload and (2) a one minute YouTube
+							a two page PDF upload and (2) a one minute YouTube
 							video presentation link.
 						</li>
 					</ol>
